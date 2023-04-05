@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose')
 const { Schema } = mongoose;
 
 const NotesSchema = new Schema({
@@ -10,7 +10,7 @@ const NotesSchema = new Schema({
         type: String,
         default: "Untitled"
     },
-    body: {
+    textBody: {
         type: String,
         default: ""
     },
